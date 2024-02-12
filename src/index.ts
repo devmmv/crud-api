@@ -3,7 +3,7 @@ import { createServer } from "http";
 import { switchRouter } from "./func";
 
 dotenv.config();
-const PORT = parseInt(process.env.PORT as string, 10);
+const PORT = parseInt(process.env.PORT as string, 10) || 4000;
 
 export const server = createServer();
 
