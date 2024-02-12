@@ -7,9 +7,6 @@ const PORT = parseInt(process.env.PORT as string, 10);
 
 export const server = createServer();
 
-console.log(process.env.NODE_ENV);
-console.log(process.env.TS_NODE_DEV);
-
 server
   .on("request", (req, res) => {
     const method = req.method!;

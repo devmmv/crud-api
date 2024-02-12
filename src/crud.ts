@@ -12,7 +12,7 @@ export const find = async (id: UUID): Promise<User> => {
 export const createNewUser = async (body: UserProp): Promise<User> => {
   const id = crypto.randomUUID();
   const newUser: User = { ...body, id };
-  console.log(newUser);
+
   allUsers[allUsers.length] = newUser;
   return newUser;
 };
